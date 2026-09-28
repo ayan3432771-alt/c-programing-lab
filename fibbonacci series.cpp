@@ -1,0 +1,22 @@
+// 0,1,1,2,3,5,8...upto n terms.w.c.p to display the given sequences.
+#include<stdio.h>
+int main()
+{
+int n, i=1,a=0,b=1 ,c;
+printf("Enter the numbers of terms");
+scanf("%d", &n);
+while(i<=n)
+{
+printf("%d\t",a);
+c=a+b;
+a=b;
+b=c;
+i++;
+}
+printf("The sum is:%d\n",c);
+return 0;
+}
+
+
+
+
