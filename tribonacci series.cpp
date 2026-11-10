@@ -1,20 +1,34 @@
-//tribonacci
 #include<stdio.h>
 int main()
 {
-  int a=0,b=1,c=1,d;
-  printf("Enter the terms:");
+  int n,a=0,b=0,c=1,next,i=1;
+  printf("Enter the nubers of terms:");
   scanf("%d",&n);
-  printf("tribonacci series:");
-  while(i<=n){
-    printf("%d",a);
-	d=a+b+c;
-	a=b;
-	b=c;
-	c=d;
-	i++;
+  if(n<=0)
+  {
+  printf("Please enter a positive number./n");
 }
- return 0;
+else
+{
+   printf("Tribonacci Sequence:");
+   while(i<=n)
+   {
+   if(i==1)
+   printf("%d",a);
+   else
+    if (if= =2)
+    printf("%d",b);
+    else if(if==3)
+    printf("%d",c);
+    else
+    {
+	  next=a+b+c;
+	  printf("%d",next);
+	  a=b;
+	  b=c;
+	  c=next;
 }
-  
-  
+       i++;
+       return 0;
+   }
+	
